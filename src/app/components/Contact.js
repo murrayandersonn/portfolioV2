@@ -18,14 +18,14 @@ const ContactPage = () => {
             </div>
             <div>
               <span className="font-semibold">GitHub:</span>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="ml-2 hover:underline">
+              <a href="https://github.com/murrayandersonn" target="_blank" rel="noopener noreferrer" className="ml-2 hover:underline">
               https://github.com/murrayandersonn
               </a>
             </div>
             <div>
               <span className="font-semibold">LinkedIn:</span>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="ml-2 hover:underline">
-              https://www.linkedin.com/in/murray-anderson-688513301/?trk=opento_sprofile_topcard
+              <a href="https://www.linkedin.com/in/murray-anderson-688513301/?trk=opento_sprofile_topcard" target="_blank" rel="noopener noreferrer" className="ml-2 hover:underline">
+              https://linkedin.com/in/murray-anderson
               </a>
             </div>
           </div>

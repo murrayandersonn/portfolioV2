@@ -1,15 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 
+
 const TechStack = () => {
   const technologies = [
     { name: 'JavaScript', icon: '/icons/javascript.svg' },
     { name: 'React', icon: '/icons/react.svg' },
     { name: 'HTML', icon: '/icons/html5.svg' },
     { name: 'CSS', icon: '/icons/css3.svg' },
-    { name: 'Tailwind CSS', icon: '/icons/tailwindcss.svg' },
+    { name: 'Tailwind', icon: '/icons/tailwind.svg' },
     { name: 'Next.js', icon: '/icons/nextjs.svg' },
     { name: 'GitHub', icon: '/icons/github.svg' },
+    { name: 'Bootstrap', icon: '/icons/bootstrap.svg'},
   ];
 
   return (
@@ -38,7 +40,7 @@ const TechStack = () => {
                       
                       width={64}
                       height={64}
-                      className="filter invert"
+                      
                     />
                   </div>
                   <h2 className="text-sm font-semibold text-center">{tech.name}</h2>
