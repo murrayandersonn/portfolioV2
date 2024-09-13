@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import profilePic from '../assets/headshot.png'
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
       <div className="flex items-center space-x-8">
         <div>
           <Image
-            src="/path-to-your-image.jpg" // Replace with your image path
+            src={profilePic} // Replace with your image path
             alt="Murray Anderson"
             width={300}
             height={300}
