@@ -18,9 +18,12 @@ const Projects = () => {
     },
     { 
       id: 2, 
-      title: 'Project 2', 
-      image: '/path-to-project2-image.jpg',
-      description: 'Detailed description of Project 2...',
+      title: 'Track Laps', 
+      image: '/images/TrackLaps2.png',
+      image2: '/images/TrackLaps6.png',
+      image3: '/images/TrackLaps8.png',
+      image4: '/images/TrackLaps9.png',
+      description: 'This project was my final project for my Front End Web Development course with Idaho State University. I was tasked with making a full CRUD React application using an API. I learned how to use responsive forms and post them to an API, as well as edit or remove existing data objects in the endpoint. I made filters to load each car data to the correct page based off which track it was entered for, and on the index page I created a table that used some JavaScript to sort each track by the fastest lap times. This project took many hours of learning and dedication to go above and beyond the project expectations and create something I was proud of. I would redesign some of the visual elements if I were to do it over but I am happy with the final result.',
       github: ''
     },
     { 
@@ -51,22 +54,29 @@ const Projects = () => {
   
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-        <div className="bg-white p-8 rounded-lg max-w-2xl w-full m-4">
+        <div className="bg-white p-8 rounded-lg max-w-4xl w-full m-4">
           <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
           <div className='flex'>
             <Image
                 src={project.image2}
                 alt={project.title}
-                width={400}
-                height={300}
-                className="w-full h-48 object-cover mb-4"
+                width={800}
+                height={700}
+                className="w-full h-54 object-fill mb-4"
             />
             <Image
                 src={project.image3}
                 alt={project.title}
-                width={400}
-                height={300}
-                className="w-full h-48 object-cover mb-4"
+                width={800}
+                height={700}
+                className="w-full h-54 object-fill mb-4"
+            />
+            <Image
+                src={project.image4}
+                alt={project.title}
+                width={800}
+                height={700}
+                className="w-full h-54 object-cover mb-4"
             />
           </div>
           <p className="mb-4">{project.description}</p>
@@ -101,7 +111,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div 
               key={project.id} 
-              className="w-56 h-80 bg-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer"
+              className="w-80 h-60 bg-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer"
               onClick={() => {
                 setSelectedProject(project);
                 setIsModalOpen(true);
@@ -110,8 +120,8 @@ const Projects = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                width={224}
-                height={224}
+                width={500}
+                height={600}
                 className="w-full h-3/4 object-cover"
               />
               <div className="h-1/4 flex items-center justify-center bg-gray-800">
